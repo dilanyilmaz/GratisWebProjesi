@@ -1,14 +1,26 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Uye from '../views/UyeEkrani.vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import BootstrapVue from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)
+Vue.config.productionTip = false
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/uye',
+    name: 'Uye',
+    component: Uye
   },
   {
     path: '/about',

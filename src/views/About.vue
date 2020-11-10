@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <sepetbtn/>
+    <productPage/>
   </div>
 </template>
+
+<script>
+import sepetbtn from '../components/sepetbtn'
+import productPage from '../components/productPage'
+
+export default {
+    components: {
+    sepetbtn,
+    productPage
+  }
+}
+</script>
